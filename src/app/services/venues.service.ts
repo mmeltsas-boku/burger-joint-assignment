@@ -1,6 +1,6 @@
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import {catchError, forkJoin, map, Observable, of, throwError} from "rxjs";
+import {forkJoin, map, Observable} from "rxjs";
 import {PhotoResponse, PlacesSearchResponse, VenuePhoto, VenueResult} from "../declarations/declarations";
 import {environment} from "../../environments/environment";
 
