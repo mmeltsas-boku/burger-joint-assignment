@@ -1,0 +1,20 @@
+<div class="main-container" [class.loaded]="!loading">
+  <div class="page-header">
+    <h1 class="page-title">Venues</h1>
+    <p [class.loading]="loading">gathering data ...</p>
+  </div>
+
+  <app-google-map [markers]="venueMarkers"></app-google-map>
+
+  <div class="app-photos">
+    <div class="image-container">
+      @for (photo of venuePhotos; track photo.fsqId) {
+        <img [src]="photo.latestPhotoUrl"
+             [alt]="'image of ' + photo.venueName"
+             [title]="photo.venueName"
+             [class.highlighted-photo]="photo.isBurgerPhoto"
+        >
+      }
+    </div>
+  </div>
+</div>

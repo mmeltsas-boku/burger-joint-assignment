@@ -1,0 +1,15 @@
+$page-max-width: 1200px;
+$sm-screen: 620px;
+$md-screen: 910px;
+$lg-screen: 1198px;
+
+body, html, #app-root {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #5B5BE6 0%, #D04C8C 100%), no-repeat, fixed;
+  background-size: cover;
+}
+
+body.loaded {
+  height: fit-content;
+}
